@@ -10,12 +10,12 @@ function App() {
 
     <div className="App">
         <Navigation />
-        <p>
+        <p className='btn'>
          This is a practice app!
         </p>
         <Container />
         <a
-          className="App-link"
+          className="btn"
           rel="noopener noreferrer"
           >
           BE HAPPY
