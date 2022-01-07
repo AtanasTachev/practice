@@ -1,12 +1,25 @@
 .nav {
     color: black;
+    text-align: end;
     width: 100%;
     height: 50px;
     font-size: large;
     vertical-align: initial;
-    text-align: center;
     position: relative;
     top: 0;
-    display: flex;
-    background-color: cornflowerblue;
+    display: inherit;
+    justify-items: start;
+    background-color: rgb(43, 224, 224);
+}
+
+.navLink {
+    position: relative;
+    text-justify: inherit;
+    margin: 1vh;
+    background-color: rgb(229, 255, 80);
+    border-radius: 0.5em;
+    text-decoration: none;
+    margin-inline-end: 0.5em;
+    padding: 0.25em;
+    display: inline-block;
 }

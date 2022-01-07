@@ -1,0 +1,10 @@
+.container {
+    position: inherit;
+    width: 350px;
+    height: 350px;
+    text-align: inherit;
+    background-color: rgb(185, 252, 0);
+    border-radius: 0.25em;
+    justify-content: inherit;
+    display: inline-flexbox;
+}
