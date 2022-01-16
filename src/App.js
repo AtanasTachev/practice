@@ -3,6 +3,7 @@ import './App.css';
 import Container from './Components/container/Container';
 
 import Navigation from './Components/navigation/Navigation';
+import Form from './Components/form/Form'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <p className='btn'>
          This is a practice app!
         </p>
+        <Routes>
+          <Route element={Form}/>
+        </Routes>
         <Container />
         <a
           className="btn"
