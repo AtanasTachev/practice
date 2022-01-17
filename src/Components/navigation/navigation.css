@@ -26,8 +26,11 @@ li {
     padding: 7.5px;
     display: inline-block;
 }
-.btn{
+.appLogo{
     position: absolute;
+    background-color: lawngreen;
+    border: solid 1px ;
+    border-radius: 5px;
     left: 10px;
     padding: 2px;
     margin: 2px;

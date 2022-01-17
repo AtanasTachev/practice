@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
         <nav className='nav'>
-            <p className='btn'>
+            <p className='appLogo'>
             This is a practice app!
             </p>
             <ul>

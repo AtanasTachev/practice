@@ -1,0 +1,11 @@
+.box {
+    width: 450px;
+    background-color:lightslategray;
+    color: #fff;
+    border-radius: 5px;
+    display:inline-flex;
+    margin: 10px;
+}
+li .containerBox{
+    display: inline-block;
+}
