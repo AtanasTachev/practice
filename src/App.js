@@ -15,7 +15,7 @@ function App() {
          This is a practice app!
         </p>
         <Routes>
-          <Route element={Form}/>
+          <Route path="/login" element={<Form />}/>
         </Routes>
         <Container />
         <a
