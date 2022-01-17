@@ -1,10 +1,8 @@
 .container {
-    position: inherit;
-    width: 350px;
+    display: inline-block;
+    width: 450px;
     height: 350px;
-    text-align: inherit;
     background-color: rgb(185, 252, 0);
     border-radius: 0.25em;
-    justify-content: inherit;
-    display: inline-flexbox;
+    margin: 20px;
 }

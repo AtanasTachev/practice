@@ -8,23 +8,16 @@ import Form from './Components/form/Form'
 function App() {
   return (
     <Router>
-
-    <div className="App">
+      <header>
         <Navigation />
-        <p className='btn'>
-         This is a practice app!
-        </p>
-        <Routes>
-          <Route path="/login" element={<Form />}/>
-        </Routes>
-        <Container />
-        <a
-          className="btn"
-          rel="noopener noreferrer"
-          >
-          BE HAPPY
-        </a>
-    </div>
+      </header>
+        <div className="App">
+            <Routes>
+              <Route path="/login" element={<Form />}/>
+              <Route path="/bestPractices" element={<Container />} />
+            </Routes>
+        </div>
+    <footer><p>&copy;don't worry, be happy!</p></footer>
     </Router>
   );
 }
