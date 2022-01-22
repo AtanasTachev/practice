@@ -21,6 +21,7 @@
     text-decoration: none;
     margin-inline-end: 0.5em;
     padding: 0.25em;
+    cursor:pointer;
 }
 li {
     padding: 7.5px;

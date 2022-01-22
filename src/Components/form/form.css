@@ -15,3 +15,9 @@ li {
 b {
     margin: 5px;
 }
+button {
+    cursor: pointer;
+}
+input {
+    cursor: pointer;
+}

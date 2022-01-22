@@ -3,9 +3,13 @@
     background-color:lightslategray;
     color: #fff;
     border-radius: 5px;
-    display:inline-flex;
     margin: 10px;
+    justify-self: center;
+    justify-items: center;
+    display: inline-block;
 }
 li .containerBox{
-    display: inline-block;
+    background-color: lightsteelblue;
+    border: 1px solid black;
+    display: block;
 }
