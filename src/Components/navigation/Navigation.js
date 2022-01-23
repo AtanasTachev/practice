@@ -9,19 +9,19 @@ const Navigation = () => {
             </p>
             <ul>
                 <li>
-                    <Link className="navLink" to="/">Practice</Link>    
+                    <Link className="navLink" to="/"><i class="fal fa-presentation">Practice Courses</i></Link>    
                 </li>
                 <li>
-                    <Link className="navLink" to="/chooseMentor">Choose Mentor</Link>
+                    <Link className="navLink" to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/bestPractices">Best practices</Link>
+                    <Link className="navLink" to="/bestPractices"><i class="fas fa-heart">Favourite Lectures</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/gallery">Gallery</Link>
+                    <Link className="navLink" to="/gallery"><i class="fas fa-images">Gallery</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/login">Login</Link>
+                    <Link className="navLink" to="/login"><i class="fas fa-sign-in-alt">Login</i></Link>
                 </li>
             </ul>
         </nav>
