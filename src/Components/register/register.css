@@ -21,3 +21,9 @@ button {
 input {
     cursor: pointer;
 }
+a.login{
+    text-decoration: none;
+    background-color: rgb(240, 113, 132);
+    border-radius: 5px;
+    width: 235px;
+}

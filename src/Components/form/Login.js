@@ -27,7 +27,7 @@ const Form = () => {
                     <li>
                         <button type='submit'>Submit</button>
                     </li>
-                    <li><a href="/register">Not Registered yet? - Register</a></li>
+                    <li><a class="register" href="/register">Not Registered yet? - Register</a></li>
                 </ul>
 
 

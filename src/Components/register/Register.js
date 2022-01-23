@@ -17,7 +17,7 @@ const Register = () => {
                     <li>
                         <button type='submit'>Register</button>
                     </li>
-                    <li><a href="/login">Already registered - Login</a></li>
+                    <li><a class="login" href="/login">Already registered - Login</a></li>
                 </ul>
 
 

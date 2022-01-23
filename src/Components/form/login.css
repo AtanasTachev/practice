@@ -21,3 +21,9 @@ button {
 input {
     cursor: pointer;
 }
+a.register {
+    text-decoration: none;
+    background-color: rgb(223, 185, 139);
+    border-radius: 5px;
+    width: 235px;
+}
