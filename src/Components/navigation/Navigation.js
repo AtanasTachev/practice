@@ -22,6 +22,9 @@ const Navigation = () => {
                 </li>
                 <li>
                     <Link className="navLink" to="/login"><i class="fas fa-sign-in-alt">Login</i></Link>
+                    <li>
+                    <Link className="navLink" to="/register"><i class="fas fa-sign-in-alt">Register</i></Link>
+                </li>
                 </li>
             </ul>
         </nav>
