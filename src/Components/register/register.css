@@ -1,0 +1,23 @@
+.register {
+    display:inline-block;
+    width:450px;
+    background-color: lightpink;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 20px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 5px;
+}
+b {
+    margin: 5px;
+}
+button {
+    cursor: pointer;
+}
+input {
+    cursor: pointer;
+}

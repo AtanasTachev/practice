@@ -1,9 +1,9 @@
-import './form.css';
+import './login.css';
 
 const Form = () => {
     return (
         <div>
-            <form class="form">
+            <form class="login">
                 <ul>
                     <li>
                         <label for="firstName"><b>First Name</b></label>
@@ -27,6 +27,7 @@ const Form = () => {
                     <li>
                         <button type='submit'>Submit</button>
                     </li>
+                    <li><a href="/register">Not Registered yet? - Register</a></li>
                 </ul>
 
 
