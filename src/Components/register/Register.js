@@ -3,21 +3,31 @@ import './register.css';
 const Register = () => {
     return (
         <div>
-            <form class="register">
+            <form class="login">
                 <ul>
+                    <li>
+                        <label for="firstName"><b>First Name</b></label>
+                        <input type="text" id="firstName" placeholder='Ivan'/>
+                    </li>
+                    <li>
+                        <label for="lastName"><b>Last Name</b></label>
+                        <input type="text" id="lastName" placeholder='Ivanov'/>
+                    </li>
                     <li>
                         <label for="email"><b>Email</b></label>
                         <input type="email" id="email" placeholder='ivan@abv.bg'/>
                     </li>
                     <li>
-                        <label for="password"><b>Password</b></label>
-                        <input type="password" id="password" placeholder='********'/>
+                        <label for="gender"><b>Gender  </b></label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male"></input>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female"></input>
                     </li>
-     
                     <li>
                         <button type='submit'>Register</button>
                     </li>
-                    <li><a class="login" href="/login">Already registered - Login</a></li>
+                    <li><a class="register" href="/login">Already registered<i>Login</i></a></li>
                 </ul>
 
 

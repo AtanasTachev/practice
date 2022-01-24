@@ -3,8 +3,8 @@ import './App.css';
 import Container from './Components/container/Container';
 
 import Navigation from './Components/navigation/Navigation';
-import Login from './Components/form/Login';
 import Register from './Components/register/Register';
+import Login from './Components/login/Login';
 import Mentors from './Components/mentors/Mentors';
 
 function App() {

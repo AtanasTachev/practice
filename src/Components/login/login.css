@@ -1,7 +1,7 @@
-.login {
+.register {
     display:inline-block;
     width:450px;
-    background-color: bisque;
+    background-color: lightpink;
     padding: 2px;
     border-radius: 5px;
     margin: 20px;
@@ -21,9 +21,13 @@ button {
 input {
     cursor: pointer;
 }
-a.register {
+a.login{
     text-decoration: none;
-    background-color: rgb(223, 185, 139);
+    background-color: rgb(240, 113, 132);
     border-radius: 5px;
     width: 235px;
+}
+li a i {
+    font-style: italic, bold;
+    margin-left: 15px;
 }
