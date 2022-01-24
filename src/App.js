@@ -6,6 +6,7 @@ import Navigation from './Components/navigation/Navigation';
 import Register from './Components/register/Register';
 import Login from './Components/login/Login';
 import Mentors from './Components/mentors/Mentors';
+import Aside from './Components/aside/Aside';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/chooseMentor" element={<Mentors />} />
             </Routes>
         </div>
+      <Aside />
     <footer><p>&copy;don't worry, be happy!</p></footer>
     </Router>
   );

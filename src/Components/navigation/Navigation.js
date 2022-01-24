@@ -12,6 +12,9 @@ const Navigation = () => {
                     <Link className="navLink" to="/"><i class="fal fa-presentation">Practice Courses</i></Link>    
                 </li>
                 <li>
+                    <Link className="navLink" to="/about"><i class="fas fa-history">About</i></Link>    
+                </li>
+                <li>
                     <Link className="navLink" to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link>
                 </li>
                 <li>

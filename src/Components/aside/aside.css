@@ -1,0 +1,21 @@
+aside {
+    width: 200px;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    background-color: #cfc09f;
+    border-radius: 7.5px;
+}
+ul.aside__ul{
+    list-style: none;
+}
+li.btn__aside{
+    background-color: rgb(221, 208, 188);
+    border-radius: 7.5px;
+    color: lightyellow;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
