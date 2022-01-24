@@ -21,6 +21,9 @@ const Navigation = () => {
                     <Link className="navLink" to="/gallery"><i class="fas fa-images">Gallery</i></Link>
                 </li>
                 <li>
+                    <Link className="navLink" to="/contacts"><i class="far fa-id-card">Contacts</i></Link>
+                </li>
+                <li>
                     <Link className="navLink" to="/login"><i class="fas fa-sign-in-alt">Login</i></Link>
                     <li>
                     <Link className="navLink" to="/register"><i class="fas fa-user-plus">Register</i></Link>
