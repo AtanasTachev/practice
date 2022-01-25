@@ -1,0 +1,11 @@
+div.about {
+    background-color: lightyellow;
+    color: mediumblue;
+    border-radius: 7.5px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-decoration-style: solid;
+    font-style: italic;
+    margin: 15px;
+}

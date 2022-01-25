@@ -7,6 +7,7 @@ import Register from './Components/register/Register';
 import Login from './Components/login/Login';
 import Mentors from './Components/mentors/Mentors';
 import Aside from './Components/aside/Aside';
+import About from './Components/about/About';
 
 function App() {
   return (
@@ -20,9 +21,11 @@ function App() {
               <Route path="/register" element={<Register />}/>
               <Route path="/bestPractices" element={<Container />} />
               <Route path="/chooseMentor" element={<Mentors />} />
+              <Route path="/about" element={<About />} />
             </Routes>
         </div>
       <Aside />
+      
     <footer><p>&copy;don't worry, be happy!</p></footer>
     </Router>
   );
