@@ -8,4 +8,6 @@ div.about {
     text-decoration-style: solid;
     font-style: italic;
     margin: 15px;
+    display: inline-block;
+    margin-right: 225px;
 }
