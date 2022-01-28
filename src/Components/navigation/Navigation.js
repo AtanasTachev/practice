@@ -5,7 +5,7 @@ const Navigation = () => {
     return (
         <nav className='nav'>
             <p className='appLogo'>
-            This is a practice app!
+            PRACTICE TO MASTER
             </p>
             <ul>
                 <li>

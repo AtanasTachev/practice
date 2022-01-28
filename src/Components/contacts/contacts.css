@@ -1,0 +1,19 @@
+#contacts {
+    width: 250px;
+    height: 450px;
+    background-color: moccasin;
+    color: rgb(10, 10, 200);
+    justify-content: center;
+    justify-self: center;
+    border-radius: 5px;
+    border: 1px solid navy;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+#contacts i {
+    margin: 5px;
+}
