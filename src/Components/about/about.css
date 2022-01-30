@@ -10,4 +10,5 @@ div.about {
     margin: 15px;
     display: inline-block;
     margin-right: 225px;
+    filter: drop-shadow(10px 10px 4px #5e5e61);
 }

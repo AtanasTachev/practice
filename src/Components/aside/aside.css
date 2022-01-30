@@ -1,3 +1,6 @@
+html {
+    font-family: Verdana, sans-serif;
+}
 aside {
     width: 200px;
     height: 40%;
@@ -5,18 +8,23 @@ aside {
     right: 0;
     top: 80px;
     margin: 15px;
-    background-color: #cfc09f;
+    background-color: rgba(251, 243, 149, 0.904);
     border-radius: 7.5px;
+    filter: drop-shadow(5px 5px 4px #5e5e61);
 }
 ul.aside__ul{
     list-style: none;
 }
 li.btn__aside{
-    background-color: rgb(221, 208, 188);
+    background-color: rgb(250, 232, 41);
     border-radius: 7.5px;
     color: lightyellow;
     width: 120px;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
+    filter: drop-shadow(3px 3px 4px #5e5e61);
+}
+li.btn__aside:hover {
+    background-color: rgb(255, 244, 118);
 }

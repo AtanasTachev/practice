@@ -14,6 +14,9 @@
     background-color: rgb(43, 224, 224);
 }
 
+.navLink:hover {
+    background-color: rgb(214, 250, 8);
+}
 .navLink {
     position: relative;
     text-justify: inherit;
@@ -24,6 +27,7 @@
     margin-inline-end: 0.5em;
     padding: 0.25em;
     cursor:pointer;
+    filter: drop-shadow(3px 3px 4px #5e5e61);
 }
 li {
     padding: 7.5px;
@@ -38,4 +42,5 @@ li {
     padding: 2px;
     margin: 2px;
     top: 10px;
+    filter: drop-shadow(6px 6px 4px #5e5e61);
 }
