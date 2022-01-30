@@ -1,7 +1,7 @@
-.register {
+.login {
     display:inline-block;
     width:450px;
-    background-color: lightpink;
+    background-color: rgb(245, 204, 210);
     padding: 2px;
     border-radius: 5px;
     margin: 20px;
@@ -23,9 +23,12 @@ input {
 }
 a.login{
     text-decoration: none;
-    background-color: rgb(240, 113, 132);
+    background-color: rgb(245, 148, 162);
     border-radius: 5px;
     width: 235px;
+}
+a.login:hover{
+    background-color: rgb(236, 94, 116);
 }
 li a i {
     font-style: italic, bold;

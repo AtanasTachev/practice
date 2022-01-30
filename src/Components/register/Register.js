@@ -3,7 +3,7 @@ import './register.css';
 const Register = () => {
     return (
         <div>
-            <form class="login">
+            <form class="register">
                 <ul>
                     <li>
                         <label for="firstName"><b>First Name</b></label>
