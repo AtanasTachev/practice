@@ -1,15 +1,23 @@
 .box {
     width: 450px;
     background-color:lightslategray;
-    color: #fff;
+    color: rgb(29, 24, 24);
     border-radius: 5px;
     margin: 10px;
-    justify-self: center;
-    justify-items: center;
     display: inline-block;
+    filter: drop-shadow(5px 5px 4px #5e5e61);
 }
-li .containerBox{
+li.containerBox{
     background-color: lightsteelblue;
     border: 1px solid black;
+    border-radius: 5px;
     display: block;
+    filter: drop-shadow(5px 5px 4px #5e5e61);
+    text-align: left;
+}  
+li.containerBox span.mentorData {
+    align-self:  right;
+}
+li.containerBox span.label {
+    align-self:  left;
 }
