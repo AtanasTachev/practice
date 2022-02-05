@@ -8,7 +8,9 @@ import Login from './Components/login/Login';
 import Mentors from './Components/mentors/Mentors';
 import Aside from './Components/aside/Aside';
 import About from './Components/about/About';
-import Contacts from './Components/contacts/Contacts.js';
+import Contacts from './Components/contacts/Contacts';
+import Gallery from './Components/gallery/Gallery';
+
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Route path="/chooseMentor" element={<Mentors />} />
               <Route path="/about" element={<About />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/gallery" element={<Gallery />} />
+
             </Routes>
         </div>
       <Aside />
