@@ -1,0 +1,14 @@
+img {
+    width: 350px;
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    display: inline-block;
+}
+ul .img {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    left: 0%;
+    padding: 1rem;
+    margin: 1rem;
+}
