@@ -33,7 +33,7 @@ const Register = () => {
                         <input type="password" id="rePass" placeholder='********'/>
                     </li>
                     <li>
-                        <button type='submit'>Register</button>
+                        <button class="register__button" type='submit'>Register</button>
                     </li>
                     <li><a class="register" href="/login">Already registered<i>Login</i></a></li>
                 </ul>

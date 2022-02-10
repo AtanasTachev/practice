@@ -16,17 +16,35 @@ li {
 b {
     margin: 5px;
 }
-button {
+button.register__button {
     cursor: pointer;
+    background-color: hsla(71, 73%, 64%, 0.467);
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.35rem;
+    display: inline-block;
+    border: 1px solid darkgreen;
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+}
+button.register__button:hover {
+    background-color: #c1eb0a;
+    color: rgb(0, 0, 0);
 }
 input {
     cursor: pointer;
+    padding: 0.5rem;
+    background-color: #d1d1d4;
+    border-radius: 0.25rem;
+    color: darkslategrey;
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
 }
 a.register {
     text-decoration: none;
     background-color: rgb(223, 185, 139);
     border-radius: 5px;
     width: 235px;
+    display: inline-block;
 }
 a.register:hover {
     background-color: rgb(221, 166, 99);

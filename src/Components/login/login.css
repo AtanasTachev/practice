@@ -16,11 +16,31 @@ li {
 b {
     margin: 5px;
 }
-button {
+
+button.login__button {
     cursor: pointer;
+    cursor: pointer;
+    background-color: hsla(308, 73%, 64%, 0.467);
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.35rem;
+    display: inline-block;
+    border: 1px solid rgb(77, 0, 100);
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+}
+button.login__button:hover {
+    background-color: #d10aeb;
+    color: rgb(0, 0, 0);
 }
 input {
     cursor: pointer;
+    padding: 0.5rem;
+    background-color: #d1d1d4;
+    border-radius: 0.25rem;
+    color: darkslategrey;
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+
 }
 a.login{
     text-decoration: none;

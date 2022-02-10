@@ -15,7 +15,7 @@ const Login = () => {
                     </li>
      
                     <li>
-                        <button type='submit'>Register</button>
+                        <button class="login__button" type='submit'>Login</button>
                     </li>
                     <li><a class="login" href="/register">Not Registered yet?<i>Register</i></a></li>
                 </ul>
