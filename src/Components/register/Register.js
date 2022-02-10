@@ -25,6 +25,14 @@ const Register = () => {
                         <input type="radio" name="gender" id="female" value="female"></input>
                     </li>
                     <li>
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" id="pass" placeholder='********'/>
+                    </li>
+                    <li>
+                        <label for="rePass"><b>Repeat Password</b></label>
+                        <input type="password" id="rePass" placeholder='********'/>
+                    </li>
+                    <li>
                         <button type='submit'>Register</button>
                     </li>
                     <li><a class="register" href="/login">Already registered<i>Login</i></a></li>
