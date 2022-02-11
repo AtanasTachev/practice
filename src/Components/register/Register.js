@@ -1,19 +1,39 @@
 import './register.css';
+import * as authServise from '../../'
 
 const Register = () => {
+
+    const onRegisterHandler = (e) => {
+        e.preventDefault();
+        let formData = new FormData(e.currentTarget);
+
+        let firstName = formData.get('firstName');
+        let lastName = formData.get('lastName');
+        let email = formData.get('email');
+        let gender = formData.get('gender');
+        let pass = formData.get('pass');
+        let repass = formData.get('repass');
+
+        if(pass !== repass) {
+            return;
+        }
+
+        authServise
+    }
+
     return (
         <div>
-            <form class="register">
+            <form onSubmit={onRegisterHandler} className="register" action="/register" >
                 <ul>
-                    <li>
+                    <li className="input">
                         <label for="firstName"><b>First Name</b></label>
                         <input type="text" id="firstName" placeholder='Ivan'/>
                     </li>
-                    <li>
+                    <li className="input">
                         <label for="lastName"><b>Last Name</b></label>
                         <input type="text" id="lastName" placeholder='Ivanov'/>
                     </li>
-                    <li>
+                    <li className="input">
                         <label for="email"><b>Email</b></label>
                         <input type="email" id="email" placeholder='ivan@abv.bg'/>
                     </li>
@@ -24,18 +44,18 @@ const Register = () => {
                         <label for="female">Female</label>
                         <input type="radio" name="gender" id="female" value="female"></input>
                     </li>
-                    <li>
+                    <li className="input">
                         <label for="password"><b>Password</b></label>
-                        <input type="password" id="pass" placeholder='********'/>
+                        <input type="password" name="pass" id="pass" placeholder='********'/>
                     </li>
-                    <li>
+                    <li className="input">
                         <label for="rePass"><b>Repeat Password</b></label>
-                        <input type="password" id="rePass" placeholder='********'/>
+                        <input type="password" name="repass" id="rePass" placeholder='********'/>
                     </li>
                     <li>
                         <button class="register__button" type='submit'>Register</button>
                     </li>
-                    <li><a class="register" href="/login">Already registered<i>Login</i></a></li>
+                    <li><a className="register" href="/login">Already registered<i>Login</i></a></li>
                 </ul>
 
 

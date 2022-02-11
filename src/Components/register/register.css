@@ -39,6 +39,13 @@ input {
     color: darkslategrey;
     filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
 }
+li.input {
+    position: relative;
+    top: 0.25vh;
+    left: -50px;
+    justify-content: end;
+    display: flex;
+}
 a.register {
     text-decoration: none;
     background-color: rgb(223, 185, 139);

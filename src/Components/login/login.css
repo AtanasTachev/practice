@@ -25,9 +25,10 @@ button.login__button {
     font-size: 1.25rem;
     color: #fff;
     padding: 0.35rem;
-    display: inline-block;
+    display: block;
     border: 1px solid rgb(77, 0, 100);
     filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+    margin: 0px 100px;
 }
 button.login__button:hover {
     background-color: #d10aeb;
@@ -40,7 +41,13 @@ input {
     border-radius: 0.25rem;
     color: darkslategrey;
     filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
-
+}
+li.input {
+    position: relative;
+    top: 0.25vh;
+    left: -50px;
+    justify-content: end;
+    display: flex;
 }
 a.login{
     text-decoration: none;
