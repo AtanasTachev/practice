@@ -1,10 +1,12 @@
 import './register.css';
 import * as authServise from '../../services/authService'
 import { Navigate, useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 
 const Register = () => {
 
     const navigate = useNavigate();
+    const {login} = useContext(AuthContext);
 
     const onRegisterHandler = (e) => {
         e.preventDefault();
@@ -23,13 +25,14 @@ const Register = () => {
 
         authServise.register(firstName, lastName, email, pass, repass)
         .then(authData => {
+            login(authData)
             navigate('/');
         });
     }
 
     return (
         <div>
-            <form onSubmit={onRegisterHandler} className="register" action="/register" >
+            <form onSubmit={onRegisterHandler} className="register" method="POST" >
                 <ul>
                     <li className="input">
                         <label for="firstName"><b>First Name</b></label>
