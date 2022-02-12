@@ -1,7 +1,10 @@
 import './register.css';
-import * as authServise from '../../'
+import * as authServise from '../../services/authService'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+
+    const navigate = useNavigate();
 
     const onRegisterHandler = (e) => {
         e.preventDefault();
@@ -18,7 +21,10 @@ const Register = () => {
             return;
         }
 
-        authServise
+        authServise.register(firstName, lastName, email, pass, repass)
+        .then(authData => {
+            navigate('/');
+        });
     }
 
     return (
