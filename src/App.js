@@ -10,10 +10,12 @@ import Aside from './Components/aside/Aside';
 import About from './Components/about/About';
 import Contacts from './Components/contacts/Contacts';
 import Gallery from './Components/gallery/Gallery';
+import { AuthProvider } from './contexts/AuthContext.js';
 
 
 function App() {
   return (
+  <AuthProvider>
     <Router>
       <header>
         <Navigation />
@@ -34,6 +36,7 @@ function App() {
       
     <footer><p>&copy;don't worry, be happy!</p></footer>
     </Router>
+    </AuthProvider>
   );
 }
 
