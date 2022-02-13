@@ -1,7 +1,8 @@
 import './register.css';
 import * as authServise from '../../services/authService'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 
 const Register = () => {
 
@@ -23,7 +24,7 @@ const Register = () => {
             return;
         }
 
-        authServise.register(firstName, lastName, email, pass, repass)
+        authServise.register(firstName, lastName, email, gender, pass, repass)
         .then(authData => {
             login(authData)
             navigate('/');
@@ -36,15 +37,15 @@ const Register = () => {
                 <ul>
                     <li className="input">
                         <label for="firstName"><b>First Name</b></label>
-                        <input type="text" id="firstName" placeholder='Ivan'/>
+                        <input type="text" name="firstName" id="firstName" placeholder='Ivan'/>
                     </li>
                     <li className="input">
                         <label for="lastName"><b>Last Name</b></label>
-                        <input type="text" id="lastName" placeholder='Ivanov'/>
+                        <input type="text" name="lastName"  id="lastName" placeholder='Ivanov'/>
                     </li>
                     <li className="input">
                         <label for="email"><b>Email</b></label>
-                        <input type="email" id="email" placeholder='ivan@abv.bg'/>
+                        <input type="email"  name="email" id="email" placeholder='ivan@abv.bg'/>
                     </li>
                     <li>
                         <label for="gender"><b>Gender  </b></label>
