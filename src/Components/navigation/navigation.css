@@ -9,8 +9,8 @@
     vertical-align: initial;
     position: relative;
     top: 0;
-    display: inherit;
-    justify-items: start;
+    display: flex;
+    justify-content: end;
     background-color: rgb(43, 224, 224);
 }
 
@@ -28,6 +28,9 @@
     padding: 0.25em;
     cursor:pointer;
     filter: drop-shadow(3px 3px 4px #5e5e61);
+}
+.navLink.user {
+    background-color: rgb(226, 162, 43);
 }
 li {
     padding: 7.5px;

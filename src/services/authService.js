@@ -27,3 +27,12 @@ export const login = async (email, password) => {
         throw jsonResult.message;
     }
 };
+
+export const logout = () => {
+    return fetch(`${baseUrl}/users/logout`, {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        }
+    });
+};

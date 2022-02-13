@@ -11,6 +11,7 @@ import About from './Components/about/About';
 import Contacts from './Components/contacts/Contacts';
 import Gallery from './Components/gallery/Gallery';
 import { AuthProvider } from './contexts/AuthContext.js';
+import Logout from './Components/Logout';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route path="/login" element={<Login />}/>
               <Route path="/register" element={<Register />}/>
+              <Route path="/logout" element={<Logout />}/>
               <Route path="/bestPractices" element={<Container />} />
               <Route path="/chooseMentor" element={<Mentors />} />
               <Route path="/about" element={<About />} />
