@@ -12,6 +12,7 @@ import Contacts from './Components/contacts/Contacts';
 import Gallery from './Components/gallery/Gallery';
 import { AuthProvider } from './contexts/AuthContext.js';
 import Logout from './Components/Logout';
+import CreatePractice from './Components/createPractice/CreatePractice';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route path="/bestPractices" element={<Container />} />
               <Route path="/chooseMentor" element={<Mentors />} />
               <Route path="/about" element={<About />} />
+              <Route path="/cretePractice" element={<CreatePractice />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/gallery" element={<Gallery />} />
 

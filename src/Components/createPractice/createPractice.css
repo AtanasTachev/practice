@@ -1,0 +1,64 @@
+.createPractice {
+    display:inline-block;
+    width:450px;
+    background-color: rgb(233, 218, 80);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 20px;
+    filter: drop-shadow(10px 10px 4px #5e5e61);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 5px;
+}
+b {
+    margin: 5px;
+}
+
+button.createPractice__button {
+    cursor: pointer;
+    cursor: pointer;
+    background-color: hsla(46, 93%, 51%, 0.938);
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.35rem;
+    display: block;
+    border: 1px solid rgb(77, 0, 100);
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+    margin: 0px 100px;
+}
+button.login__button:hover {
+    background-color: #d10aeb;
+    color: rgb(0, 0, 0);
+}
+input {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #d1d1d4;
+    border-radius: 0.25rem;
+    color: darkslategrey;
+    filter: drop-shadow(3.5px 3.5px 1px #5e5e61);
+}
+li.input {
+    position: relative;
+    top: 0.25vh;
+    left: -50px;
+    justify-content: end;
+    display: flex;
+}
+a.login{
+    text-decoration: none;
+    background-color: rgb(245, 148, 162);
+    border-radius: 5px;
+    width: 235px;
+}
+a.login:hover{
+    background-color: rgb(236, 94, 116);
+}
+li a i {
+    font-style: italic, bold;
+    margin-left: 15px;
+}

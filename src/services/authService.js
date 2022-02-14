@@ -1,4 +1,4 @@
-import {baseUrl} from '../constants'
+import {baseUrl} from '../constants';
 
 export const register = async (firstName, lastName, email, gender, pass, repass) => {
     let response = await fetch(`${baseUrl}/users/register`, {
