@@ -1,11 +1,9 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext';
-import * as authService from '../../services/authService'
+import * as practiceService from '../../services/practiceService'
 import './createPractice.css';
 
 const CreatePractice = () => {
-    const { login } = useContext( AuthContext )
 
     const navigate = useNavigate();
     
@@ -22,15 +20,14 @@ const CreatePractice = () => {
         let dueDateOfProject = formData.get('dueDateOfProject');
 
 
-        authService.login(
+        practiceService.createPractice({
             practiceTitle, 
             mentor,
             startDate,
             duration,
             dateOfExam,
-            dueDateOfProject)
-        .then((authData) => {
-            login(authData);
+            dueDateOfProject})
+        .then(() => {
             navigate('/');
         })
         .catch(error => {
