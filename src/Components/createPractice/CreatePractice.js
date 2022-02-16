@@ -1,10 +1,12 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthContext';
 import * as practiceService from '../../services/practiceService'
 import './createPractice.css';
 
 const CreatePractice = () => {
 
+    const { user } = useContext(AuthContext);
     const navigate = useNavigate();
     
     const onCreatePracticeHandler = (e) => {
@@ -18,7 +20,7 @@ const CreatePractice = () => {
         let duration = formData.get('duration');
         let dateOfExam = formData.get('dateOfExam');
         let dueDateOfProject = formData.get('dueDateOfProject');
-
+        const creator = user._id;
 
         practiceService.createPractice({
             practiceTitle, 
@@ -26,8 +28,9 @@ const CreatePractice = () => {
             startDate,
             duration,
             dateOfExam,
-            dueDateOfProject})
-        .then(() => {
+            dueDateOfProject,
+            creator})
+        .then(result => {
             navigate('/');
         })
         .catch(error => {
