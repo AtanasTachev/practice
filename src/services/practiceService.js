@@ -1,6 +1,6 @@
 import { baseUrl } from '../constants';
 
-export const createPractice = async (practiceTitle, mentor, startDate, duration, dateOfExam, dueDateOfProject,creator) => {
+export const createPractice = async ({practiceTitle, mentor, startDate, duration, dateOfExam, dueDateOfProject,creator}) => {
     let response = await fetch(`${baseUrl}/practice/create`, {
         method : "POST",
         headers: {
@@ -9,5 +9,6 @@ export const createPractice = async (practiceTitle, mentor, startDate, duration,
         body: JSON.stringify({practiceTitle, mentor, startDate, duration, dateOfExam, dueDateOfProject, creator})
         });
     let result = await response.json();
+    console.log(result);
     return result;
 }

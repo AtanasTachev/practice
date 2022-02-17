@@ -33,19 +33,19 @@ const Login = () => {
         <div>
             <form className="login" method="POST" onSubmit={onLoginHandler}>
                 <ul>
-                    <li class="input">
-                        <label for="email"><b>Email</b></label>
+                    <li className="input">
+                        <label htmlFor="email"><b>Email</b></label>
                         <input type="email" name="email" id="email" placeholder='ivan@abv.bg'/>
                     </li>
-                    <li class="input">
-                        <label for="password"><b>Password</b></label>
+                    <li className="input">
+                        <label htmlFor="password"><b>Password</b></label>
                         <input type="password" name="pass" id="password" placeholder='********'/>
                     </li>
      
                     <li>
-                        <button class="login__button" type='submit'>Login</button>
+                        <button className="login__button" type='submit'>Login</button>
                     </li>
-                    <li><a class="login" href="/register">Not Registered yet?<i>Register</i></a></li>
+                    <li><a className="login" href="/register">Not Registered yet?<i>Register</i></a></li>
                 </ul>
             </form>
         </div>

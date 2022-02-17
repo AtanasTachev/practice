@@ -36,34 +36,34 @@ const Register = () => {
             <form onSubmit={onRegisterHandler} className="register" method="POST" >
                 <ul>
                     <li className="input">
-                        <label for="firstName"><b>First Name</b></label>
+                        <label htmlFor="firstName"><b>First Name</b></label>
                         <input type="text" name="firstName" id="firstName" placeholder='Ivan'/>
                     </li>
                     <li className="input">
-                        <label for="lastName"><b>Last Name</b></label>
+                        <label htmlFor="lastName"><b>Last Name</b></label>
                         <input type="text" name="lastName"  id="lastName" placeholder='Ivanov'/>
                     </li>
                     <li className="input">
-                        <label for="email"><b>Email</b></label>
+                        <label htmlFor="email"><b>Email</b></label>
                         <input type="email"  name="email" id="email" placeholder='ivan@abv.bg'/>
                     </li>
                     <li>
-                        <label for="gender"><b>Gender  </b></label>
-                        <label for="male">Male</label>
+                        <label htmlFor="gender"><b>Gender  </b></label>
+                        <label htmlFor="male">Male</label>
                         <input type="radio" name="gender" id="male" value="male"></input>
-                        <label for="female">Female</label>
+                        <label htmlFor="female">Female</label>
                         <input type="radio" name="gender" id="female" value="female"></input>
                     </li>
                     <li className="input">
-                        <label for="password"><b>Password</b></label>
+                        <label htmlFor="password"><b>Password</b></label>
                         <input type="password" name="pass" id="pass" placeholder='********'/>
                     </li>
                     <li className="input">
-                        <label for="rePass"><b>Repeat Password</b></label>
+                        <label htmlFor="rePass"><b>Repeat Password</b></label>
                         <input type="password" name="repass" id="rePass" placeholder='********'/>
                     </li>
                     <li>
-                        <button class="register__button" type='submit'>Register</button>
+                        <button className="register__button" type='submit'>Register</button>
                     </li>
                     <li><a className="register" href="/login">Already registered<i>Login</i></a></li>
                 </ul>
