@@ -3,7 +3,7 @@ html {
 }
 aside {
     width: 200px;
-    min-height: 40%;
+    min-height: 30%;
     position:fixed;
     right: 0;
     top: 130px;
