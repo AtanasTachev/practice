@@ -16,6 +16,9 @@ const Login = () => {
 
         let email = formData.get('email');
         let pass = formData.get('pass');
+        // let role = formData.get('role');
+
+        // if(role === '')
 
         authService.login(email, pass)
         .then((authData) => {
@@ -41,6 +44,15 @@ const Login = () => {
                         <label htmlFor="password"><b>Password</b></label>
                         <input type="password" name="pass" id="password" placeholder='********'/>
                     </li>
+                    {/* <li>
+                        <label htmlFor="role"><b>Role</b></label>
+                        <label htmlFor="student">Student</label>
+                        <input type="radio" name="role" id="student" value="student"></input>
+                        <label htmlFor="mentor">Mentor</label>
+                        <input type="radio" name="role" id="mentor" value="mentor"></input>
+                        <label htmlFor="admin">Admin</label>
+                        <input type="radio" name="admin" id="admin" value="admin"></input>
+                    </li> */}
      
                     <li>
                         <button className="login__button" type='submit'>Login</button>

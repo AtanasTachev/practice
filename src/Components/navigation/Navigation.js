@@ -1,23 +1,23 @@
 import './navigation.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
-// import { AuthContext } from '../../contexts/AuthContext';
+import { AuthContext } from '../../contexts/AuthContext';
 import * as authService from '../../services/authService';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navigation = () => {
 
-// const { user } = useContext(AuthContext);
-const { userId } = useParams();
+const { user } = useContext(AuthContext);
+const userId = user._id
 
-const [user, setUser] = useState([]);
+const [userInfo, setUserInfo] = useState([]);
 useEffect(() => {
       authService.getUser(userId)
       .then(result => {
-          setUser(result);
+          setUserInfo(result);
       })
-})
+}, [])
 
+// const isAdmin = Boolean(userInfo.role === 'admin')
     return (
         <nav className='nav'>
             <p className='appLogo'>PRACTICE TO MASTER</p>
@@ -43,10 +43,7 @@ useEffect(() => {
                     <Link className="navLink" to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
-                </li>
-                <li>
-                    <p className={"navLink user"}>Welcome {user.email} <b>role</b> {user.role}</p>
+                    <p className={"navLink user"}>Welcome <b>{user.email}</b> role <b>{userInfo.role}</b></p>
                 </li>
                 <li> 
                     <Link className="navLink" to="/logout"><i class="far fa-sign-out-alt">Logout</i></Link>
@@ -62,6 +59,12 @@ useEffect(() => {
                     <Link className="navLink" to="/register"><i class="fas fa-user-plus">Register</i></Link>
                 </li>
                 </>}
+                {/* {isAdmin ? */}
+                <li>
+                    <Link className="navLink" to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
+                </li>
+                {/* <></>
+                } */}
             </ul>
         </nav>
     )
