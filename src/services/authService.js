@@ -28,6 +28,16 @@ export const login = async (email, password) => {
     }
 };
 
+export const getUser = async (userId) => {
+    try {
+        let response = await fetch(`${baseUrl}/users/${userId}`);
+        let user = await response.json();
+        return user;
+    } catch(error) {
+        console.log(error.message);
+    }
+}
+
 export const logout = () => {
     return fetch(`${baseUrl}/users/logout`, {
         method: 'POST',

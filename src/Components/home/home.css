@@ -1,0 +1,11 @@
+img.home {
+    width: 65vw;
+}
+article {
+    display: flex;
+    justify-content: center;
+    vertical-align: text-bottom;
+    margin-top: 2rem;
+    opacity: 35%;
+    filter: grayscale(100%) ;
+}

@@ -13,7 +13,7 @@ import Gallery from './Components/gallery/Gallery';
 import { AuthProvider } from './contexts/AuthContext.js';
 import Logout from './Components/Logout';
 import CreatePractice from './Components/createPractice/CreatePractice';
-
+import Home from './Components/home/Home';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
       </header>
         <div className="App">
             <Routes>
+              <Route path='/' element={<Home />}></Route>
               <Route path="/login" element={<Login />}/>
               <Route path="/register" element={<Register />}/>
               <Route path="/logout" element={<Logout />}/>

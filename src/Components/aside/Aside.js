@@ -1,4 +1,4 @@
-import { useContext, useReducer } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import './aside.css';
@@ -12,8 +12,8 @@ const { user } = useContext(AuthContext)
             <li class="btn__aside"><Link to="/"><i class="fal fa-presentation">Practice Courses</i></Link></li>
             <li class="btn__aside"><Link to="/about"><i class="fas fa-history">About</i></Link></li>
             <li class="btn__aside"><Link to="/bestPractices"><i class="fas fa-heart">Favourite Lectures</i></Link></li>
-            <li class="btn__aside"><Link to="/contacts"><i class="far fa-id-card">Contacts</i></Link></li>
             <li class="btn__aside"><Link to="/gallery"><i class="fas fa-images">Gallery</i></Link></li>
+            <li class="btn__aside"><Link to="/contacts"><i class="far fa-id-card">Contacts</i></Link></li>
             { user.email ?
             <>
             <li className="btn__aside">
