@@ -17,6 +17,7 @@ const Register = () => {
         let lastName = formData.get('lastName');
         let email = formData.get('email');
         let gender = formData.get('gender');
+        let role = formData.get('role');
         let pass = formData.get('pass');
         let repass = formData.get('repass');
 
@@ -24,7 +25,7 @@ const Register = () => {
             return;
         }
 
-        authServise.register(firstName, lastName, email, gender, pass, repass)
+        authServise.register(firstName, lastName, email, gender, role, pass, repass)
         .then(authData => {
             login(authData)
             navigate('/');
@@ -61,6 +62,15 @@ const Register = () => {
                     <li className="input">
                         <label htmlFor="rePass"><b>Repeat Password</b></label>
                         <input type="password" name="repass" id="rePass" placeholder='********'/>
+                    </li>
+                    <li>
+                        <label htmlFor="role"><b>Role</b></label>
+                        <label htmlFor="student">Student</label>
+                        <input type="radio" name="role" id="student" value="student"></input>
+                        <label htmlFor="mentor">Mentor</label>
+                        <input type="radio" name="role" id="mentor" value="mentor"></input>
+                        <label htmlFor="admin">Admin</label>
+                        <input type="radio" name="admin" id="admin" value="admin"></input>
                     </li>
                     <li>
                         <button className="register__button" type='submit'>Register</button>

@@ -17,7 +17,7 @@ const { user } = useContext(AuthContext)
             { user.email ?
             <>
             <li className="btn__aside">
-                <Link  to="/cretePractice"><i class="far fa-id-card">Create Practice</i></Link>
+                <Link  to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
             </li>
             <li class="btn__aside"><Link to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link></li>
             </>

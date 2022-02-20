@@ -27,7 +27,7 @@ const { user } = useContext(AuthContext);
                     <Link className="navLink" to="/bestPractices"><i class="fas fa-heart">Favourite Lectures</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/cretePractice"><i class="far fa-id-card">Create Practice</i></Link>
+                    <Link className="navLink" to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
                 </li>
                 <li>
                     <Link className="navLink" to="/gallery"><i class="fas fa-images">Gallery</i></Link>
