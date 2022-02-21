@@ -15,9 +15,11 @@ useEffect(() => {
       .then(result => {
           setUserInfo(result);
       })
-}, [])
+}, []);
 
-// const isAdmin = Boolean(userInfo.role === 'admin')
+const userAvailable = Boolean(user.email !== '');
+console.log(userAvailable);
+const isAdmin = Boolean(userInfo.role === 'admin');
     return (
         <nav className='nav'>
             <p className='appLogo'>PRACTICE TO MASTER</p>
@@ -37,7 +39,7 @@ useEffect(() => {
                 <li>
                     <Link className="navLink" to="/contacts"><i class="far fa-id-card">Contacts</i></Link>
                 </li>
-                { user.email ?
+                { userAvailable ?
                 <>
                 <li>
                     <Link className="navLink" to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link>
@@ -59,12 +61,12 @@ useEffect(() => {
                     <Link className="navLink" to="/register"><i class="fas fa-user-plus">Register</i></Link>
                 </li>
                 </>}
-                {/* {isAdmin ? */}
+                {isAdmin ?
                 <li>
                     <Link className="navLink" to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
-                </li>
-                {/* <></>
-                } */}
+                </li>:
+                <></>
+                }
             </ul>
         </nav>
     )
