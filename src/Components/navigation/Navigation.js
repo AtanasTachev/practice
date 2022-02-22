@@ -17,56 +17,58 @@ useEffect(() => {
       })
 }, []);
 
-const userAvailable = Boolean(user.email !== '');
-console.log(userAvailable);
-const isAdmin = Boolean(userInfo.role === 'admin');
+// const userAvailable = Boolean(user.email !== '');
+// console.log(userAvailable);
+// const isAdmin = Boolean(userInfo.role === 'admin');
+// if (userAvailable || isAdmin) {
+//     return
+// }
     return (
         <nav className='nav'>
             <p className='appLogo'>PRACTICE TO MASTER</p>
             <ul>
                 <li>
-                    <Link className="navLink" to="/"><i class="fal fa-presentation">Practice Courses</i></Link>    
+                    <Link className="navLink" to="/"><i className="fal fa-presentation">Practice Courses</i></Link>    
                 </li>
                 <li>
-                    <Link className="navLink" to="/about"><i class="fas fa-history">About</i></Link>    
+                    <Link className="navLink" to="/about"><i className="fas fa-history">About</i></Link>    
                 </li>
                 <li>
-                    <Link className="navLink" to="/bestPractices"><i class="fas fa-heart">Favourite Lectures</i></Link>
+                    <Link className="navLink" to="/bestPractices"><i className="fas fa-heart">Favourite Lectures</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/gallery"><i class="fas fa-images">Gallery</i></Link>
+                    <Link className="navLink" to="/gallery"><i className="fas fa-images">Gallery</i></Link>
                 </li>
                 <li>
-                    <Link className="navLink" to="/contacts"><i class="far fa-id-card">Contacts</i></Link>
+                    <Link className="navLink" to="/contacts"><i className="far fa-id-card">Contacts</i></Link>
                 </li>
-                { userAvailable ?
+                {/* { userAvailable ?
                 <>
-                <li>
-                    <Link className="navLink" to="/chooseMentor"><i class="fas fa-user-graduate">Choose Mentor</i></Link>
-                </li>
-                <li>
-                    <p className={"navLink user"}>Welcome <b>{user.email}</b> role <b>{userInfo.role}</b></p>
-                </li>
-                <li> 
-                    <Link className="navLink" to="/logout"><i class="far fa-sign-out-alt">Logout</i></Link>
-                </li>
-                
+                    <li>
+                        <Link className="navLink" to="/chooseMentor"><i className="fas fa-user-graduate">Choose Mentor</i></Link>
+                    </li>
+                    <li>
+                        <p className={"navLink user"}>Welcome <b>{user.email}</b> role <b>{userInfo.role}</b></p>
+                    </li>
+                    <li> 
+                        <Link className="navLink" to="/logout"><i className="far fa-sign-out-alt">Logout</i></Link>
+                    </li>
                 </>
                 :
                 <>
-                <li>
-                    <Link className="navLink" to="/login"><i class="fas fa-sign-in-alt">Login</i></Link>
-                </li>
-                <li>
-                    <Link className="navLink" to="/register"><i class="fas fa-user-plus">Register</i></Link>
-                </li>
+                    <li>
+                        <Link className="navLink" to="/login"><i className="fas fa-sign-in-alt">Login</i></Link>
+                    </li>
+                    <li>
+                        <Link className="navLink" to="/register"><i className="fas fa-user-plus">Register</i></Link>
+                    </li>
                 </>}
                 {isAdmin ?
-                <li>
-                    <Link className="navLink" to="/createPractice"><i class="far fa-id-card">Create Practice</i></Link>
-                </li>:
-                <></>
-                }
+                    <li>
+                        <Link className="navLink" to="/createPractice"><i className="far fa-id-card">Create Practice</i></Link>
+                    </li>
+                    :<></> 
+                } */}
             </ul>
         </nav>
     )
